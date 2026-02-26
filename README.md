@@ -1,8 +1,8 @@
 # Buffer CLI
 
-A command-line interface for [Buffer](https://buffer.com) — manage your social media accounts, channels, and posts from the terminal.
+A command-line interface for [Buffer](https://buffer.com) via [Buffer API]([developers.buffer.com](developers.buffer.com/)) — manage your social media accounts, channels, and posts from the terminal.
 
-**Docs:** [developers.buffer.com](https://developers.buffer.com/) | **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI.
+ **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI using this CLI.
 
 ![morphing ui-large](https://github.com/user-attachments/assets/c20ebfd6-79f9-4663-b087-79041fec9b08)
 
@@ -133,7 +133,7 @@ Or pass it per command with `--auth-token "your-token"`.
 
 ## How This CLI Is Built
 
-This binary is generated from Buffer's public [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/erickhun/clihub), an open-source tool that turns any MCP server into a compiled CLI.
+This binary is generated from Buffer's public [MCP server](https://mcp.buffer.com/mcp) by [Diego Castillo](https://x.com/diegocasmo) using [clihub](https://github.com/erickhun/clihub), an open-source tool that turns any MCP server into a compiled CLI.
 
 No hand-written application code — clihub connects to the MCP server, discovers available tools, and generates a self-contained Go binary with one subcommand per tool.
 
