@@ -108,10 +108,27 @@ export BUFFER_AUTH_TOKEN="your-token"
 
 Or pass it per command with `--auth-token "your-token"`.
 
+## How This CLI Is Built
+
+This binary is generated from Buffer's public [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/erickhun/clihub), an open-source tool that turns any MCP server into a compiled CLI.
+
+No hand-written application code — clihub connects to the MCP server, discovers available tools, and generates a self-contained Go binary with one subcommand per tool.
+
+**Build it yourself:**
+
+```bash
+# Clone clihub
+git clone https://github.com/erickhun/clihub.git && cd clihub
+
+# Generate the buffer CLI
+go run . generate \
+  --url https://mcp.buffer.com/mcp \
+  --name buffer \
+  --exclude-tools introspect_schema,execute_query,execute_mutation
+```
+
+This produces the same binary — you can audit the [clihub source](https://github.com/erickhun/clihub) and verify the build yourself.
+
 ## License
 
 MIT
-
----
-
-Generated from Buffer's [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/erickhun/clihub).
