@@ -2,7 +2,7 @@
 
 A command-line interface for [Buffer](https://buffer.com) — manage your social media accounts, channels, and posts from the terminal.
 
-**Docs:** [developers.buffer.com](https://developers.buffer.com/)
+**Docs:** [developers.buffer.com](https://developers.buffer.com/) | **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI.
 
 ## Quick Start
 

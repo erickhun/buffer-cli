@@ -99,12 +99,13 @@ buffer get-channel --channel-id <id>
 
 ## Platform Rules
 
-- **Twitter**: Max 280 chars. Hook-first. Text beats video by 30%.
-- **LinkedIn**: Up to 3000 chars. Professional. First line is the hook. Line breaks for readability.
-- **Threads**: Max 500 chars. Casual, conversational.
-- **Bluesky**: Max 300 chars. Concise, tech-savvy audience.
-- **Mastodon**: Max 500 chars.
-- **Instagram**: Up to 2200 chars. Visual-first — note if image recommended.
+- **Twitter**: Max 280 chars. Text-first platform — text posts get 30% more engagement than video. Hook in first line, ask questions to drive replies. Best times: weekday mornings 8-10am. Limit 1-3 posts/day with 2-3hr spacing.
+- **LinkedIn**: Max 3000 chars, first 150 visible before "see more". Carousels get 596% more engagement than text. Professional tone, end with a question. Best times: Tue-Thu 10am. Max 1 post/day.
+- **Threads**: Max 500 chars. Pictures get highest engagement (60% more than text-only). Casual, conversational tone. Best times: weekday mornings 7-9am.
+- **Bluesky**: Max 300 chars. Tech-savvy early-adopter audience. Concise, authentic, early-Twitter vibe. No video support yet.
+- **Mastodon**: Max 500 chars. Chronological feed — timing matters. Use 3-5 CamelCase hashtags for discovery. Community-first, anti-corporate tone.
+- **Instagram**: Max 2200 chars caption. Requires image/video. Carousels and Reels perform best. Put hashtags in firstComment. Best times: evenings 6-10pm, Wed best day.
+- **TikTok**: Requires video. Hook in first 1-2 seconds, watch completion is the top signal. Best times: late afternoon/evening 4-8pm.
 - **Facebook**: Conversational. Questions drive engagement.
 
-Adapt tone per platform. Front-load the hook.
+Adapt tone per platform. Front-load the hook. End with a question to drive comments.
