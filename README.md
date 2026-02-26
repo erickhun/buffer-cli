@@ -1,6 +1,6 @@
 # Buffer CLI
 
-A command-line interface for [Buffer](https://buffer.com) via [Buffer API]([developers.buffer.com](developers.buffer.com/)) — manage your social media accounts, channels, and posts from the terminal.
+A (non-official) command-line interface for [Buffer](https://buffer.com) via [Buffer API]([developers.buffer.com](developers.buffer.com/)) — manage your social media accounts, channels, and posts from the terminal.
 
  **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI using this CLI.
 
