@@ -110,7 +110,7 @@ Or pass it per command with `--auth-token "your-token"`.
 
 ## How This CLI Is Built
 
-This binary is generated from Buffer's public [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/thellimist/clihub), an open-source tool that turns any MCP server into a compiled CLI.
+This binary is generated from Buffer's public [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/erickhun/clihub), an open-source tool that turns any MCP server into a compiled CLI.
 
 No hand-written application code — clihub connects to the MCP server, discovers available tools, and generates a self-contained Go binary with one subcommand per tool.
 
@@ -118,7 +118,7 @@ No hand-written application code — clihub connects to the MCP server, discover
 
 ```bash
 # Clone clihub
-git clone https://github.com/thellimist/clihub.git && cd clihub
+git clone https://github.com/erickhun/clihub.git && cd clihub
 
 # Generate the buffer CLI
 go run . generate \
@@ -127,7 +127,7 @@ go run . generate \
   --exclude-tools introspect_schema,execute_query,execute_mutation
 ```
 
-This produces the same binary — you can audit the [clihub source](https://github.com/thellimist/clihub) and verify the build yourself.
+This produces the same binary — you can audit the [clihub source](https://github.com/erickhun/clihub) and verify the build yourself.
 
 ## License
 
