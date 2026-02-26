@@ -7,8 +7,10 @@ A command-line interface for [Buffer](https://buffer.com) — manage your social
 ## Quick Start
 
 ```bash
-# Install (macOS Apple Silicon)
-curl -sL https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-darwin-arm64 -o /usr/local/bin/buffer && chmod +x /usr/local/bin/buffer
+# Install (macOS Apple Silicon — see below for other platforms)
+URL=https://github.com/erickhun/buffer-cli/releases/latest/download
+curl -sL $URL/buffer-darwin-arm64 -o /usr/local/bin/buffer
+chmod +x /usr/local/bin/buffer
 
 # Authenticate
 export BUFFER_AUTH_TOKEN="your-token"
