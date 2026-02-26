@@ -4,7 +4,7 @@ A command-line interface for [Buffer](https://buffer.com) — manage your social
 
 **Docs:** [developers.buffer.com](https://developers.buffer.com/) | **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI.
 
-![claude-cli-demo-large](https://github.com/user-attachments/assets/3b21fcc1-03f0-41ea-8fc1-4914c7766574)
+ ![Uploading morphing ui-large.gif…]()
 
 
 ## Quick Start
