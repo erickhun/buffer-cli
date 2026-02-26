@@ -2,58 +2,19 @@
 
 A command-line interface for [Buffer](https://buffer.com) — manage your social media accounts, channels, and posts from the terminal.
 
-Generated from Buffer's [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/erickhun/clihub).
-
 **Docs:** [developers.buffer.com](https://developers.buffer.com/)
 
-## Installation
-
-### macOS (Apple Silicon)
+## Quick Start
 
 ```bash
-curl -L https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-darwin-arm64 -o buffer
-chmod +x buffer
-sudo mv buffer /usr/local/bin/buffer
-```
+# Install (macOS Apple Silicon)
+curl -sL https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-darwin-arm64 -o /usr/local/bin/buffer && chmod +x /usr/local/bin/buffer
 
-### macOS (Intel)
-
-```bash
-curl -L https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-darwin-amd64 -o buffer
-chmod +x buffer
-sudo mv buffer /usr/local/bin/buffer
-```
-
-### Linux (x86_64)
-
-```bash
-curl -L https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-linux-amd64 -o buffer
-chmod +x buffer
-sudo mv buffer /usr/local/bin/buffer
-```
-
-### Linux (ARM64)
-
-```bash
-curl -L https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-linux-arm64 -o buffer
-chmod +x buffer
-sudo mv buffer /usr/local/bin/buffer
-```
-
-### Windows
-
-Download `buffer-windows-amd64.exe` from the [latest release](https://github.com/erickhun/buffer-cli/releases/latest).
-
-## Authentication
-
-Get a Buffer access token from [developers.buffer.com](https://developers.buffer.com/), then either:
-
-```bash
-# Set as environment variable
+# Authenticate
 export BUFFER_AUTH_TOKEN="your-token"
 
-# Or pass it per command
-buffer get-account --auth-token "your-token"
+# Go
+buffer get-account
 ```
 
 ## Commands
@@ -77,7 +38,7 @@ buffer get-account
 # List your connected channels
 buffer list-channels --organization-id <org-id>
 
-# Create a post
+# Publish a post now
 buffer create-post \
   --channel-id <channel-id> \
   --text "Hello from the Buffer CLI!" \
@@ -102,15 +63,55 @@ buffer list-posts \
   --status sent
 ```
 
-## Output Formats
+### Output Formats
 
 ```bash
-buffer get-account -o json     # JSON output
-buffer get-account -o text     # Plain text (default)
-buffer get-account -o markdown # Markdown formatted
+buffer get-account -o json     # JSON (default)
+buffer get-account -o text     # Plain text
+buffer get-account -o markdown # Markdown
 buffer get-account -o raw      # Raw MCP response
 ```
+
+## Installation
+
+### macOS
+
+```bash
+# Apple Silicon
+curl -sL https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-darwin-arm64 -o /usr/local/bin/buffer && chmod +x /usr/local/bin/buffer
+
+# Intel
+curl -sL https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-darwin-amd64 -o /usr/local/bin/buffer && chmod +x /usr/local/bin/buffer
+```
+
+### Linux
+
+```bash
+# x86_64
+curl -sL https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-linux-amd64 -o /usr/local/bin/buffer && chmod +x /usr/local/bin/buffer
+
+# ARM64
+curl -sL https://github.com/erickhun/buffer-cli/releases/latest/download/buffer-linux-arm64 -o /usr/local/bin/buffer && chmod +x /usr/local/bin/buffer
+```
+
+### Windows
+
+Download `buffer-windows-amd64.exe` from the [latest release](https://github.com/erickhun/buffer-cli/releases/latest).
+
+## Authentication
+
+Get a Buffer access token from [developers.buffer.com](https://developers.buffer.com/), then:
+
+```bash
+export BUFFER_AUTH_TOKEN="your-token"
+```
+
+Or pass it per command with `--auth-token "your-token"`.
 
 ## License
 
 MIT
+
+---
+
+Generated from Buffer's [MCP server](https://mcp.buffer.com/mcp) using [clihub](https://github.com/erickhun/clihub).
