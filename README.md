@@ -19,6 +19,23 @@ export BUFFER_AUTH_TOKEN="your-token"
 buffer get-account
 ```
 
+Example output:
+
+```json
+{
+  "name": "Jane",
+  "email": "jane@example.com",
+  "timezone": "America/New_York",
+  "organizations": [
+    {
+      "id": "org_abc123",
+      "name": "My Company",
+      "limits": { "channels": 20, "scheduledPosts": 5000 }
+    }
+  ]
+}
+```
+
 ## Commands
 
 | Command | Description |
