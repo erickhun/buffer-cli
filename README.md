@@ -2,12 +2,6 @@
 
 A (non-official) command-line interface for [Buffer](https://buffer.com) via the [Buffer API]([developers.buffer.com] — to manage your social media accounts, channels, and posts from the terminal.
 
- **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI using this CLI.
-
-![morphing ui-large](https://github.com/user-attachments/assets/c20ebfd6-79f9-4663-b087-79041fec9b08)
-
-
-
 ## Quick Start
 
 ```bash
@@ -130,6 +124,12 @@ export BUFFER_AUTH_TOKEN="your-token"
 ```
 
 Or pass it per command with `--auth-token "your-token"`.
+
+## Claude code Skill
+ **Claude Code users:** this repo includes a [skill](/.claude/skills/skill.md) — type `/buffer` for an interactive posting UI using this CLI.
+
+![morphing ui-large](https://github.com/user-attachments/assets/c20ebfd6-79f9-4663-b087-79041fec9b08)
+
 
 ## How This CLI Is Built
 
