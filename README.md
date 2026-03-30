@@ -1,6 +1,6 @@
 # Buffer CLI
 
-A (non-official) command-line interface for [Buffer](https://buffer.com) via the [Buffer API]([developers.buffer.com] — to manage your social media accounts, channels, and posts from the terminal.
+A (non-official) command-line interface for [Buffer](https://buffer.com) via the [Buffer API](developers.buffer.com) — to manage your social media accounts, channels, and posts from the terminal.
 
 ## Quick Start
 
